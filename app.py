@@ -3,7 +3,7 @@ import random
  
 w = 500
 h = 500
-food_size = 10
+food_size = 20
 delay = 100
  
 offsets = {
@@ -15,7 +15,7 @@ offsets = {
  
 def reset():
     global snake, snake_dir, food_position, pen
-    snake = [[0, 5], [0, 20], [0, 40], [0, 60], [0, 80]]
+    snake = [[0, 0], [0, 20], [0, 40], [0, 60], [0, 80]]
     snake_dir = "up"
     food_position = get_random_food_position()
     food.goto(food_position)
